@@ -1,302 +1,308 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <meta name="title" content="이성우의 web">
-		<meta name="description" content="이성우의 flexWeb">
-
-  <meta property="og:title" content="flexWeb">
-		<meta property="og:description" content="이성우의 flexWeb.">
-		<meta property="og:image" content="https://win401.github.io/win401.github.io/images/grandCanyonOg.jpeg">
-		<meta property="og:url" content="https://win401.github.io/win401.github.io">
-  <title>flexWeb1</title>
-  <!-- <link rel="stylesheet" href="../common/minireset.min.css"> -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-
-    html {scroll-behavior: smooth;}
-
-    body {
-      margin: 0;
-      line-height: 2;
-      overflow: auto;
-      overflow-x: hidden;
-    }
-
-    body::-webkit-scrollbar {width: 5px;}
-    body::-webkit-scrollbar-thumb {background-color: rgb(215, 86, 0);}
-    body::-webkit-scrollbar-track {background-color: var(--bgcolor1);}
-
-    p, h1, h2, h5 {
-      margin: 0;
-    }
-
-    h1, h2, h5 {
-      font-family: 'Great Vibes', cursive;
-    }
-
-    h1 {font-size: var(--fontSizeh1);}
-    h2 {font-size: var(--fontSizeh2);}
-    h5 {font-size: var(--fontSizeh5);}
-
-    :root {
-      --bgcolor1: #FEFAE0;
-      --bgcolor2: #FAEDCD;
-      --fontSizeh1: 5rem;
-      --fontSizeh2: 3rem;
-      --fontSizeh5: 0.8rem; 
-      
-    }
-
-    /* header */
-
-    header {
-      height: 90vh; width: 100vw;
-      background-color: var(--bgcolor1);
-      display: flex;
-      flex-direction: column;
-      justify-content: center
-      
-    }
-
-    header .header_innr {
-      margin: 0 auto;
-      width: 50vw;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: var(--fontSizeh1);
-      text-transform: capitalize;
-    }
-
-    header h5 {
-      margin: 0;
-      font-size: var(--fontSizeh5);
-    }
-
-    header p {
-      margin: 0;
-    }
-
-    button {
-      border: 1px solid #959c7d ;
-      border-radius: 30px;
-      width: 150px;
-      text-transform: uppercase;
-      padding: 10px 20px;
-      margin-top: 30px;
-      font-weight: bold;
-      background-color: transparent;
-    }
-
-    .line1 {
-      background-color:var(--bgcolor2);
-
-      width: 100vw; height: 90vh;
-      display: flex;
-    }
-
-    .line1 .txt {
-      width: 30%; height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 0 100px;
-    }
-
-    .line1 .txt h5 {
-      font-size: var(--fontSizeh5);
-    }
-
-    .line1 .txt h2 {
-      font-size: var(--fontSizeh2);
-    }
-
-
-
-    .line1 .img {
-      width: 70%; height: 100%;
-      object-fit: cover;
-      /* object-position: 30% 50%; */
-      overflow: hidden;
-      
-    }
-
-    .line1 .img img {
-      height: 100%;
-    }
-
-    /* line2 */
-
-    .line2 {
-      display: flex;
-      background-color: var(--bgcolor1);
-      height: 90vh; width: 100vw;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .line2 div {
-      width: 30vw;
-    }
-
-    .line2 div p {
-      width: 90%;
-    }
-
-    .line2 h2 {font-size: var(--fontSizeh2);}
-    .line2 h5 {font-size: var(--fontSizeh5);}
-
-    /* line3 */
-
-    .line3 {
-      height: 90vh;
-      width: 100vw;
-      display: flex;
-      background-color: var(--bgcolor2);
-
-    }
-
-    .line3 .imgbox {
-      width: 70%; height: 100%;
-      overflow: hidden;
-    }
-
-    .line3 .imgbox img {
-      width: 100%; height: 100%;
-      object-fit: cover;
-    } 
-
-    .line3 .txt {
-      width: 30%; height: 100%;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 0 100px;
-    }
-
-    /* footer */
-
-    footer {
-      height: 90vh; width: 100vw;
-      background-color: var(--bgcolor1);
-      display: flex;
-      flex-direction: column;
-      justify-content: center
-
-    }
-
-    footer .footer_innr {
-      width: 60vw;
-      margin: 0 auto;
-    }
-
-    footer input {
-      width: 500px;
-      border: 1px solid #959c7d ;
-      border-radius: 30px;
-      padding: 10px 20px;
-    }
-
-    footer .iconbox {
-      margin-top: 30px;
-    }
-
-    footer .iconbox img {
-      width: 3rem;
-    }
-
-    .top {
-      position: fixed;
-      top: 90vh; right: 50px;
-      width: 50px; aspect-ratio: 1;
-      text-align: center;
-      line-height: 50px;
-      background-color: #959c7d;
-      cursor: pointer;
-      border-radius: 50%;
-      opacity: 0.6;
-      
-    }
-
-    .top:hover {
-      opacity: 1;
-      transform: scale(1.1);
-    }
-
-
-
-
-    
-  </style>
+  <title>flexWeb2</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./minireset.min.css">
+  <link rel="stylesheet" href="./flexWeb2.css">
 </head>
+
 <body>
   <header>
-    <div class="header_innr">
-      <h5>aliquam consequat</h5>
-      <h1>arizona</h1>
-      <p>generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristicgenerated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristicwords etc.</p>
-      <button> s a g i t t i s</button>
+    <nav class="container">
+      <div class="logo"><img src="./image/logo.png" alt=""></div>
+      <menu>
+        <li><a href="#">팬스타 소개</a></li>
+        <li><a href="#">사업분야</a></li>
+        <li><a href="#">고객지원</a></li>
+        <li><a href="#">미디어센터</a></li>
+        <li><a href="#">인재채용</a></li>
+      </menu>
+      <div class="rightmenu">
+        <div class="sidelogo">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path
+                d="M192 32c0-17.7 14.3-32 32-32H352c17.7 0 32 14.3 32 32V64h48c26.5 0 48 21.5 48 48V240l44.4 14.8c23.1 7.7 29.5 37.5 11.5 53.9l-101 92.6c-16.2 9.4-34.7 15.1-50.9 15.1c-19.6 0-40.8-7.7-59.2-20.3c-22.1-15.5-51.6-15.5-73.7 0c-17.1 11.8-38 20.3-59.2 20.3c-16.2 0-34.7-5.7-50.9-15.1l-101-92.6c-18-16.5-11.6-46.2 11.5-53.9L96 240V112c0-26.5 21.5-48 48-48h48V32zM160 218.7l107.8-35.9c13.1-4.4 27.3-4.4 40.5 0L416 218.7V128H160v90.7zM306.5 421.9C329 437.4 356.5 448 384 448c26.9 0 55.4-10.8 77.4-26.1l0 0c11.9-8.5 28.1-7.8 39.2 1.7c14.4 11.9 32.5 21 50.6 25.2c17.2 4 27.9 21.2 23.9 38.4s-21.2 27.9-38.4 23.9c-24.5-5.7-44.9-16.5-58.2-25C449.5 501.7 417 512 384 512c-31.9 0-60.6-9.9-80.4-18.9c-5.8-2.7-11.1-5.3-15.6-7.7c-4.5 2.4-9.7 5.1-15.6 7.7c-19.8 9-48.5 18.9-80.4 18.9c-33 0-65.5-10.3-94.5-25.8c-13.4 8.4-33.7 19.3-58.2 25c-17.2 4-34.4-6.7-38.4-23.9s6.7-34.4 23.9-38.4c18.1-4.2 36.2-13.3 50.6-25.2c11.1-9.4 27.3-10.1 39.2-1.7l0 0C136.7 437.2 165.1 448 192 448c27.5 0 55-10.6 77.5-26.1c11.1-7.9 25.9-7.9 37 0z" />
+            </svg>e SHIPPING</a>
+        </div>
+        <select name="site" id="site">
+          <option value="">family site</option>
+          <option value="">팬스타엔터프라이즈</option>
+          <option value="">팬스타크루즈</option>
+          <option value="">팬스타신항국제물류센터</option>
+          <option value="">팬스타테크솔루션</option>
+          <option value="">팬스타국제특송</option>
+          <option value="">팬스타미래사업본부</option>
+          <option value="">팬투어</option>
+          <option value="">코스타크루즈</option>
+          <option value="">산스타라인</option>
+        </select>
+        <select name="lang" id="lang">
+          <option value="KOR">KOR</option>
+          <option value="ENG">ENG</option>
+          <option value="JPN">JPN</option>
+          <option value="CHN">CHN</option>
+        </select>
+      </div>
+    </nav>
+    <div class="mov-box">
+      <!-- <img src="./image/ship-main.jpg" alt="shipimg"> -->
+      <video autoplay loop muted>
+        <source src="./image/visual.mp4">
+      </video>
+    </div>
+    <div class="mov-txtbox">
+      <h2><em>over the network<br><span>create new values</span></em></h2>
+
+      <h5><em>고객을 위한 새로운 가치를 만들어 가기 위해<br>
+          팬스타는 먼저 생각하고 먼저 움직입니다</em></h5>
+    </div>
+    <div class="abmenu">
+      <div class="abmenu1">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M50.7 58.5L0 160H208V32H93.7C75.5 32 58.9 42.3 50.7 58.5zM240 160H448L397.3 58.5C389.1 42.3 372.5 32 354.3 32H240V160zm208 32H0V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192z" />
+          </svg></span>
+        <a href="#">국제특송<br>예약/조회</a>
+      </div>
+      <div class="abmenu2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+          <path
+            d="M192 32c0-17.7 14.3-32 32-32H352c17.7 0 32 14.3 32 32V64h48c26.5 0 48 21.5 48 48V240l44.4 14.8c23.1 7.7 29.5 37.5 11.5 53.9l-101 92.6c-16.2 9.4-34.7 15.1-50.9 15.1c-19.6 0-40.8-7.7-59.2-20.3c-22.1-15.5-51.6-15.5-73.7 0c-17.1 11.8-38 20.3-59.2 20.3c-16.2 0-34.7-5.7-50.9-15.1l-101-92.6c-18-16.5-11.6-46.2 11.5-53.9L96 240V112c0-26.5 21.5-48 48-48h48V32zM160 218.7l107.8-35.9c13.1-4.4 27.3-4.4 40.5 0L416 218.7V128H160v90.7zM306.5 421.9C329 437.4 356.5 448 384 448c26.9 0 55.4-10.8 77.4-26.1l0 0c11.9-8.5 28.1-7.8 39.2 1.7c14.4 11.9 32.5 21 50.6 25.2c17.2 4 27.9 21.2 23.9 38.4s-21.2 27.9-38.4 23.9c-24.5-5.7-44.9-16.5-58.2-25C449.5 501.7 417 512 384 512c-31.9 0-60.6-9.9-80.4-18.9c-5.8-2.7-11.1-5.3-15.6-7.7c-4.5 2.4-9.7 5.1-15.6 7.7c-19.8 9-48.5 18.9-80.4 18.9c-33 0-65.5-10.3-94.5-25.8c-13.4 8.4-33.7 19.3-58.2 25c-17.2 4-34.4-6.7-38.4-23.9s6.7-34.4 23.9-38.4c18.1-4.2 36.2-13.3 50.6-25.2c11.1-9.4 27.3-10.1 39.2-1.7l0 0C136.7 437.2 165.1 448 192 448c27.5 0 55-10.6 77.5-26.1c11.1-7.9 25.9-7.9 37 0z" />
+        </svg>
+        <a href="#">팬스타크루즈<br>예약/조회</a>
+      </div>
+    </div>
+    <div class="gradient">
+      <img src="./image/main_diag2.png" alt="gradient1" class="gradient1">
+      <img src="./image/main_diag3.png" alt="gradient2" class="gradient2">
+      <img src="./image/main_diag1.png" alt="gradient3" class="gradient3">
+      <img src="./image/main_diag5.png" alt="gradient4" class="gradient4">
+      <img src="./image/main_diag4.png" alt="gradient5" class="gradient5">
     </div>
   </header>
   <main>
-    <section class="line1">
-      <div class="txt">
-        <h5>aliqum consequat</h5>
-        <h2>Grand Canyon</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio officiis quas ducimus nulla accusantium rerum alias. Dolore facilis quos, est, magni, cupiditate excepturi distinctio quaerat earum officiis velit adipisci neque.</p>
-        <button>s a g i t t i s</button>
+    <section class="mainbox1">
+      <div class="txt-box">
+        <h2>/</h2>
+        <h3>at a glance</h3>
+        <p>해운과 물류를 넘어 네트워크를 통해 새로운 가치를 창조해 가는 팬스타<br>
+          팬스타의 도전과 혁신은 오늘도 계속되고 있습니다.</p>
       </div>
-      <div class="img img2"><img src="./images/grandCanyon.jpeg" alt="img1"></div>
+      <div class="iconbox">
+        <div class="icon iconbox1">
+          <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z" />
+          </svg>
+          <h3>31<span class="h3sidetxt"> years</span></h3>
+          <h4>팬스타 창립31주년</h4>
+          <p>since 1990.07.12</p>
+        </div>
+        <div class="icon iconbox2">
+          <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+          </svg>
+          <h3>15,546,123<span class="h3sidetxt"> 명</span></h3>
+          <h4>팬스타 오사카 크루즈페리</h4>
+          <p>부산-오사카 총 승객수</p>
+        </div>
+        <div class="icon iconbox3">
+          <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+          </svg>
+          <h3>40<span class="h3sidetxt"> hours</span></h3>
+          <h4>팬스타코리아랜드브릿지</h4>
+          <p>한-중-일 리드타임</p>
+        </div>
+        <div class="icon iconbox4">
+          <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <path
+              d="M192 32c0-17.7 14.3-32 32-32H352c17.7 0 32 14.3 32 32V64h48c26.5 0 48 21.5 48 48V240l44.4 14.8c23.1 7.7 29.5 37.5 11.5 53.9l-101 92.6c-16.2 9.4-34.7 15.1-50.9 15.1c-19.6 0-40.8-7.7-59.2-20.3c-22.1-15.5-51.6-15.5-73.7 0c-17.1 11.8-38 20.3-59.2 20.3c-16.2 0-34.7-5.7-50.9-15.1l-101-92.6c-18-16.5-11.6-46.2 11.5-53.9L96 240V112c0-26.5 21.5-48 48-48h48V32zM160 218.7l107.8-35.9c13.1-4.4 27.3-4.4 40.5 0L416 218.7V128H160v90.7zM306.5 421.9C329 437.4 356.5 448 384 448c26.9 0 55.4-10.8 77.4-26.1l0 0c11.9-8.5 28.1-7.8 39.2 1.7c14.4 11.9 32.5 21 50.6 25.2c17.2 4 27.9 21.2 23.9 38.4s-21.2 27.9-38.4 23.9c-24.5-5.7-44.9-16.5-58.2-25C449.5 501.7 417 512 384 512c-31.9 0-60.6-9.9-80.4-18.9c-5.8-2.7-11.1-5.3-15.6-7.7c-4.5 2.4-9.7 5.1-15.6 7.7c-19.8 9-48.5 18.9-80.4 18.9c-33 0-65.5-10.3-94.5-25.8c-13.4 8.4-33.7 19.3-58.2 25c-17.2 4-34.4-6.7-38.4-23.9s6.7-34.4 23.9-38.4c18.1-4.2 36.2-13.3 50.6-25.2c11.1-9.4 27.3-10.1 39.2-1.7l0 0C136.7 437.2 165.1 448 192 448c27.5 0 55-10.6 77.5-26.1c11.1-7.9 25.9-7.9 37 0z" />
+          </svg>
+          <h3>439<span class="h3sidetxt"> 항차</span></h3>
+          <h4>연안&국제크루즈</h4>
+          <p>정통 크루즈 운항 횟수</p>
+        </div>
+      </div>
+    </section>
+    <section class="mainbox2">
+      <div class="txt-box">
+        <h2>/</h2>
+        <h3>business area</h3>
+        <p>팬스타는 무한한 가능성의 바다에서 최초의 길을 만들어 왔습니다<br>
+          그리고 이제 고객을 위한 최고를 만들어 갑니다.</p>
+      </div>
+      <div class="txt-img-box">
+        <div class="left-txt-box">
+          <ul>
+            <li><a href="">고속화물페리</a></li>
+            <li><a href="">크루즈 여객</a></li>
+            <li><a href="">국제특송</a></li>
+            <li><a href="">자동차정비기기</a></li>
+            <li><a href="">친환경 선박기술</a></li>
+            <li><a href="">창고보관</a></li>
+          </ul>
+          <h3>고속화물페리</h3>
+          <p>팬스타는 고속 Ro-Ro페리를 이용한 해상운송으로 신속한 선적 및 하역,내륙운송,현지 통관면허를 보유하고 있는 일본 현지법인을 통해 일관해상운송체계를 구축
+            해상화물의 리드타임을 항공화물에 준하도록 단축시키면서 운송비용은 대폭 절감시켜 드립니다.
+            컨테이너화물은 물론 다양한 형태의 벌크화물,건설장비/자제,자동차 등 어떤 종류의
+            화물이라도 컨테이너없이 바로 선내에 선적하여 빠르고 안전한 운송을 보장합니다.
+            더 빠르게,더 안전하게,더 편리하게 팬스타 고속화물페리가 책임집니다.
+          </p>
+          <div class="imgbox">
+            <img src="./image/mb_cargo_01.png" alt="cargo1">
+            <img src="./image/mb_cargo_02.png" alt="cargo2">
+            <img src="./image/mb_cargo_03.png" alt="cargo3">
+          </div>
+        </div>
+        <div class="right-img-box">
+          <img src="./image/mb_cargo.png" alt="cargo">
+        </div>
+        <div class="more"><a href="">more detail</a></div>
+      </div>
     </section>
 
-    <section class="line2">
-      <div class="txt1">
-        <h5>aliquam consequat</h5>
-        <h2>morbi tincidat</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio officiis quas ducimus nulla accusantium rerum alias. Dolore facilis quos, est, magni, cupiditate excepturi distinctio quaerat earum officiis velit adipisci neque.</p>
-        <button>s a g i t t i s</button>
+    <section class="mainbox3">
+      <div class="txt-box">
+        <h2>/</h2>
+        <h3>schedule</h3>
+        <p>팬스타고속화물페리는 빠르고 안전함은 물론,뛰어난 정시성을 자랑합니다.<br>
+          주요 선박의 운항일정을 간편하게 확인해 보세요.
+        </p>
       </div>
-      <div class="txt2">
-        <h5>aliquam consequat</h5>
-        <h2>morbi tincidat</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio officiis quas ducimus nulla accusantium rerum alias. Dolore facilis quos, est, magni, cupiditate excepturi distinctio quaerat earum officiis velit adipisci neque.</p>
-        <button>s a g i t t i s</button>
-      </div>
+      <ul>
+        <li><a href="">sanstar dream</a></li>
+        <li><a href="">panstar genie</a></li>
+        <li><a href="">panstar genie no.2</a></li>
+        <li><a href="">panstar dream</a></li>
+      </ul>
+      <div class="kakaomap"><img src="./image/kakaoo.png" alt="map"></div>
+      <div class="more">more detail</div>
     </section>
-    <div class="top" onclick="window.scrollTo(0,0)">
-      Top
-    </div>
 
-    
-    <section class="line3">
-      <div class="imgbox"><img src="./images/grandcanyon2.jpeg" alt="img2"></div>
-      <div class="txt">
-        <h5>aliquam consequat</h5>
-        <h2>morbi tincidat</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio officiis quas ducimus nulla accusantium rerum alias. Dolore facilis quos, est, magni, cupiditate excepturi distinctio quaerat earum officiis velit adipisci neque.</p>
-        <button>s a g i t t i s</button>
+    <section class="mainbox4">
+      <div class="txt-box">
+        <h2>/</h2>
+        <h3>contact us</h3>
+        <p>오늘보다 내일이 더 새로운 팬스타의 최신 정보를 제공해 드립니다.</p>
+      </div>
+      <div class="txt-img-box">
+        <div class="imgbox">
+          <img src="./image/1.png" alt="img1">
+          <div class="absolute-txt">
+            <a href="#" class="submit">보도자료</a>
+            <p>29일부터 대마도행 여객선 승객수 제한 해제...
+              팬스타 425명까지 승...
+            </p>
+            <span>2023.04.28</span>
+            <a href="#" class="whitesub">자세히보기</a>
+          </div>
+        </div>
+        <div class="noticebox">
+          <h4>notice</h4>
+          <div class="ulbox">
+            <ul class="ul1">
+              <li>- [안내] 팬스타크루즈 예약 시스템 점검 안내</li>
+              <li>- [입찰공고] 시스템 데이터 재구성 및 빅테이터 분석용 DW구축</li>
+              <li>- 디지털 전환 프로젝트 기반 작업 설계 전략 컨설팅-입찰 공고</li>
+              <li>- 2021년 선박 정기 점검으로 인한 휴항 안내(4/30~5/09)</li>
+              <li>- 팬스타크루즈 고객센터 주말 및 공휴일 영업시간 안내</li>
+            </ul>
+            <ul class="ul2">
+              <li><svg xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                </svg>2022-07-10</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                </svg>2021-08-24</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                </svg>2021-07-27</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                </svg>2021-04-29</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                </svg>2020-12-29</li>
+            </ul>
+          </div>
+          <a href="#">소식더보기</a>
+        </div>
+        <div class="recruit-box">
+          <div class="imgbox">
+            <img src="./image/bg_main_recruit.png" alt="recruit">
+          </div>
+          <div class="txtbox">
+            <h4>recruit</h4>
+            <h5>팬스타 채용안내</h5>
+          </div>
+          <a href="#">채용공고확인</a>
+        </div>
       </div>
     </section>
   </main>
+
   <footer>
-    <div class="footer_innr">
-      <h5>aliquam consequat</h5>
-      <h1>auctor orci</h1>
-      <p>generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-      <input type="email" placeholder="Email">
-      <button>s a g i t t i s</button>
-      <div class="iconbox">
-        <img src="./images/facebook.png" alt="icon1">
-        <img src="./images/insta.png" alt="icon2">
-        <img src="./images/twitter.png" alt="icon3">
-        <img src="./images/message.png" alt="icon4">
+    <div class="logobar">
+      <img src="./image/PanStar BNGD.png" alt="logo1">
+      <img src="./image/PanStar Enterprise.png" alt="logo2">
+      <img src="./image/PanStar TechSolution.png" alt="logo3">
+      <img src="./image/PANSTAR Tree.png" alt="logo4">
+      <img src="./image/PanStarline.com.png" alt="logo5">
+      <img src="./image/SP TRADING.png" alt="logo6">
+      <img src="./image/SANSTAR.png" alt="logo7">
+    </div>
+    <div class="footbar">
+      <div class="leftbox">
+        <img src="./image/Logo - PanStar.png" alt="greylogo">
+        <p>서울특별시 중구 무교로20,어린이재단빌딩 5층 부산광역시 중구 해관로 30,팬스타크루즈 플라자 빌딩 3층<br>
+          대표전화 [여객] 1577-9996 [화물] 051&#41;465-4500 팩스 051&#41;469-8208</p>
+        <span>copyright&copy;panstar all rights reserved.</span>
+      </div>
+      <div class="rightbox">
+        <ul>
+          <li><a href="#">법적고지</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">이메일 수집거부</a></li>
+        </ul>
+        <select name="lang" id="lang">
+          <option value="KOR">KOR</option>
+          <option value="ENG">ENG</option>
+          <option value="JPN">JPN</option>
+          <option value="CHN">CHN</option>
+        </select>
+        <select name="site" id="site">
+          <option value="">family site</option>
+          <option value="">팬스타엔터프라이즈</option>
+          <option value="">팬스타크루즈</option>
+          <option value="">팬스타신항국제물류센터</option>
+          <option value="">팬스타테크솔루션</option>
+          <option value="">팬스타국제특송</option>
+          <option value="">팬스타미래사업본부</option>
+          <option value="">팬투어</option>
+          <option value="">코스타크루즈</option>
+          <option value="">산스타라인</option>
+        </select>
       </div>
     </div>
   </footer>
 </body>
+
 </html>
