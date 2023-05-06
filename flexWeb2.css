@@ -73,7 +73,7 @@ header .container {
 }
 
 header .container menu {
-  width: 45%;
+  width: 47%;
   display: inherit;
   justify-content: space-between;
 }
@@ -333,8 +333,8 @@ main .iconbox1 h3::after {
   width: 25px;
   background-color: black;
   position: absolute;
-  bottom: -15px;
-  left: 130px;
+  top: 120%;
+  left: 47%;
 }
 
 main .iconbox2 h3::after {
@@ -343,8 +343,8 @@ main .iconbox2 h3::after {
   width: 25px;
   background-color: black;
   position: absolute;
-  bottom: -15px;
-  left: 130px;
+  top: 120%;
+  left: 47%;
 }
 
 main .iconbox3 h3::after {
@@ -353,8 +353,8 @@ main .iconbox3 h3::after {
   width: 25px;
   background-color: black;
   position: absolute;
-  bottom: -15px;
-  left: 130px;
+  top: 120%;
+  left: 47%;
 }
 
 main .iconbox4 h3::after {
@@ -363,8 +363,8 @@ main .iconbox4 h3::after {
   width: 25px;
   background-color: black;
   position: absolute;
-  bottom: -15px;
-  left: 130px;
+  top: 120%;
+  left: 47%;
 }
 
 /* main mainbox2 */
@@ -441,7 +441,7 @@ main .mainbox2 .right-img-box {
 main .mainbox2 .more {
   position: absolute;
   top: 60%;
-  left: 46%;
+  left: 47%;
   background-color: #f5821f;
   z-index: 999;
   width: 150px;
