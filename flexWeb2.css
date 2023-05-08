@@ -44,17 +44,42 @@ body {
 header {
   position: relative;
   height: 100vh;
+  width: 100vw;
   overflow: hidden;
 }
 
-.mov-box {
-  height: 100vh;
+#site, #lang {height: 30px;}
+
+header #site ,header #lang {
+  background-color: transparent;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-/* .youtube {
-  width: 100%;
+footer #site ,footer #lang {
+  background-color: transparent;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #c3c3c3;
+}
+
+footer #site {
+  background-color: rgb(37, 37, 37);
+}
+
+
+header .mov-box {
   height: 100%;
-} */
+  width: 100%;
+}
+
+header .mov-box video {width: 100%; height: 100%; object-fit: cover;}
+header .mov-box video source {width: 100%;}
+
+
+
 
 header .container {
   display: flex;
@@ -170,6 +195,19 @@ header .gradient5 {
   bottom: 0;
   left: -2px;
 }
+
+header .gradient6 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+header .gradient7 {
+  position: absolute;
+  bottom: 0; right: 0;
+}
+
+
 
 header .abmenu1 {
   text-align: center;
@@ -378,13 +416,14 @@ main .mainbox2 .txt-box1 {
 }
 
 main .mainbox2 .txt-img-box {
+  /* width: 50%; */
   display: flex;
   justify-content: flex-end;
 }
 
 main .mainbox2 .left-txt-box {
   background-color: #ebebeb;
-  width: 1000px;
+  width: 55%;
   height: 585px;
   /* transform: translateY(-50px); */
   position: absolute;
@@ -436,6 +475,7 @@ main .mainbox2 .left-txt-box p {
 
 main .mainbox2 .right-img-box {
   z-index: 999;
+  width: 50%;
 }
 
 main .mainbox2 .more {
